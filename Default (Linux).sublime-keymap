@@ -1,0 +1,146 @@
+[
+  // My Customization
+  // Navigation
+  { "keys": ["ctrl+shift+h"], "command": "move_to_neighboring_group", "args": {"forward": false}, "context": [{"key": "setting.command_mode"}] },
+  { "keys": ["ctrl+shift+l"], "command": "move_to_neighboring_group", "args": {"forward": true}, "context": [{"key": "setting.command_mode"}] },
+  { "keys": ["H"], "command": "focus_neighboring_group", "args": {"forward": false}, "context": [{"key": "setting.command_mode"}] },
+  { "keys": ["L"], "command": "focus_neighboring_group", "context": [{"key": "setting.command_mode"}] },
+  { "keys": ["h"], "command": "move", "args": {"by": "characters", "forward": false},
+    "context": [{"key": "control", "operand": "sidebar_tree"} ] },
+  { "keys": ["j"], "command": "move", "args": {"by": "lines", "forward": true},
+    "context": [{"key": "control", "operand": "sidebar_tree"} ] },
+  { "keys": ["k"], "command": "move", "args": {"by": "lines", "forward": false},
+    "context": [{"key": "control", "operand": "sidebar_tree"} ] },
+  { "keys": ["l"], "command": "move", "args": {"by": "characters", "forward": true},
+    "context": [{"key": "control", "operand": "sidebar_tree"} ] },
+  { "keys": ["ctrl+k"], "command": "move", "args": {"by": "lines", "forward": false},
+    "context": [{"key": "overlay_visible", "operator": "equal", "operand": true}] },
+  { "keys": ["ctrl+j"], "command": "move", "args": {"by": "lines", "forward": true},
+    "context": [{"key": "overlay_visible", "operator": "equal", "operand": true}] },
+  { "keys": ["ctrl+k"], "command": "scroll_lines", "args": {"amount": 1.0 },
+    "context": [{"key": "overlay_visible", "operator": "equal", "operand": false}] },
+  { "keys": ["ctrl+j"], "command": "scroll_lines", "args": {"amount": -1.0 },
+    "context": [{"key": "overlay_visible", "operator": "equal", "operand": false}] },
+  {"keys": ["ctrl+h"], "command": "move_to", "args": {"to": "bol", "extend": false} },
+  {"keys": ["ctrl+l"], "command": "move_to", "args": {"to": "eol", "extend": false} },
+  {"keys": ["ctrl+alt+w"], "command": "close_tabs"},
+  {
+    "keys": ["ctrl+alt+s"], "command": "open_path",
+    "args": {"path": "/home/jake/.config/sublime-text-3/Packages/User/Preferences.sublime-settings"}
+  },
+  {
+    "keys": ["ctrl+alt+k"], "command": "open_path",
+    "args": {"path": "/home/jake/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap"}
+  },
+  {"keys": ["ctrl+alt+h"], "command": "move_tab", "args": {"offset": "-1"}},
+  {"keys": ["ctrl+alt+l"], "command": "move_tab", "args": {"offset": "1"}},
+  {"keys": ["alt+h"], "command": "prev_view"},
+  {"keys": ["alt+l"], "command": "next_view"},
+  {"keys": [" ", "`"], "command": "toggle_and_focus_sidebar"},
+  { "keys": ["`"], "command": "focus_side_bar", "context": [{"key": "setting.command_mode"}] },
+
+  // Edit
+  { "keys": ["u"], "command": "undo", "context": [{"key": "setting.command_mode"}] },
+  { "keys": ["ctrl+r"], "command": "redo", "context": [{"key": "setting.command_mode"}] },
+  // { "keys": ["ctrl+e"], "command": "find_under_expand" },
+  { "keys": [" ", "h"], "command": "show_panel", "args": {"panel": "replace", "reverse": false}, "context": [{"key": "setting.command_mode"}] },
+  { "keys": [" ", "j"], "command": "join_lines", "context": [{"key": "setting.command_mode"}] },
+  // Edit: Vintage Numbers
+  { "keys": ["alt+a"], "command": "set_action_motion", "args": {
+    "action": "vi_increment_number",
+    "motion": null },
+    "context": [{"key": "setting.command_mode"}]
+  },
+  { "keys": ["alt+x"], "command": "set_action_motion", "args": {
+    "action": "vi_decrement_number",
+    "motion": null },
+    "context": [{"key": "setting.command_mode"}]
+  },
+
+  // Fold
+  { "keys": [" ", "["], "command": "fold", "context": [{"key": "setting.command_mode"}] },
+  { "keys": [" ", "]"], "command": "unfold", "context": [{"key": "setting.command_mode"}] },
+  { "keys": [" ", "1"], "command": "fold_by_level", "args": {"level": 1}, "context": [{"key": "setting.command_mode"}] },
+  { "keys": [" ", "2"], "command": "fold_by_level", "args": {"level": 2}, "context": [{"key": "setting.command_mode"}] },
+  { "keys": [" ", "3"], "command": "fold_by_level", "args": {"level": 3}, "context": [{"key": "setting.command_mode"}] },
+  { "keys": [" ", "4"], "command": "fold_by_level", "args": {"level": 4}, "context": [{"key": "setting.command_mode"}] },
+  { "keys": [" ", "5"], "command": "fold_by_level", "args": {"level": 5}, "context": [{"key": "setting.command_mode"}] },
+  { "keys": [" ", "6"], "command": "fold_by_level", "args": {"level": 6}, "context": [{"key": "setting.command_mode"}] },
+  { "keys": [" ", "7"], "command": "fold_by_level", "args": {"level": 7}, "context": [{"key": "setting.command_mode"}] },
+  { "keys": [" ", "8"], "command": "fold_by_level", "args": {"level": 8}, "context": [{"key": "setting.command_mode"}] },
+  { "keys": [" ", "9"], "command": "fold_by_level", "args": {"level": 9}, "context": [{"key": "setting.command_mode"}] },
+  { "keys": [" ", "0"], "command": "unfold_all", "context": [{"key": "setting.command_mode"}] },
+  { "keys": [" ", "t"], "command": "fold_tag_attributes", "context": [{"key": "setting.command_mode"}] },
+
+  // MISC
+  {"keys": ["alt+e"], "command": "toggle_menu"},
+  {"keys": ["ctrl+8"], "command": "copy_file_path"},
+  {"keys": ["ctrl+9"], "command": "copy_file_folder_path"},
+  {"keys": ["ctrl+0"], "command": "copy_project_folder_path"},
+  {"keys": ["ctrl+shift+9"], "command": "open_file_folder"},
+  {"keys": ["ctrl+shift+0"], "command": "open_project_folder"},
+  { "keys": ["j", "k"], "command": "exit_insert_mode",
+    "context":
+    [
+        {"key": "setting.command_mode", "operand": false},
+        {"key": "setting.is_widget", "operand": false}
+    ]
+  },
+
+  { "keys": ["k", "j"], "command": "exit_insert_mode",
+    "context":
+    [
+        {"key": "setting.command_mode", "operand": false},
+        {"key": "setting.is_widget", "operand": false}
+    ]
+  },
+  // {"keys": [" ","b"], "command": "toggle_bookmark", "context": [{ "key": "setting.command_mode" }]},
+  // {"keys": [" ","c"], "command": "clear_bookmarks", "context": [{ "key": "setting.command_mode" }]},
+  // {"keys": [" ","h"], "command": "prev_bookmark", "context": [{ "key": "setting.command_mode" }]},
+  // {"keys": [" ","l"], "command": "next_bookmark", "context": [{ "key": "setting.command_mode" }]},
+  // {"keys": [" ","a"], "command": "select_all_book", "context": [{ "key": "setting.command_mode" }]},
+  {
+    "command": "anaconda_goto", "keys": [" ", "g"], "context": [
+      {"key": "selector", "operator": "equal", "operand": "source.python"}, {"key": "setting.command_mode"}
+    ]
+  },
+  {
+    "command": "anaconda_find_usages", "keys": [" ", "f"], "context": [
+      {"key": "selector", "operator": "equal", "operand": "source.python"}, {"key": "setting.command_mode"}
+    ]
+  },
+  {
+    "command": "anaconda_doc", "keys": ["ctrl+alt+d"], "context": [
+      {"key": "selector", "operator": "equal", "operand": "source.python"}, {"key": "setting.command_mode"}
+    ]
+  },
+  {
+    "command": "anaconda_auto_format", "keys": ["ctrl+alt+r"], "context": [
+      {"key": "selector", "operator": "equal", "operand": "source.python"}, {"key": "setting.command_mode"}
+    ]
+  },
+  {
+    "keys": [" ", "r"], "command": "show_overlay", "args": {"overlay": "goto", "text": "@"},
+    "context": [{"key": "setting.command_mode"}]
+  },
+  // {"keys": [" ", "p"], "command": "goto_symbol_in_project", "context": [{"key": "setting.command_mode"}]},
+  { "keys": ["ctrl+w"], "command": "close", "context": [{"key": "setting.command_mode"}]},
+  { "keys": ["z"], "command": "close", "context": [{"key": "setting.command_mode"}]},
+  { "keys": ["Z"], "command": "reopen_last_file", "context": [{"key": "setting.command_mode"}]},
+  // { "keys": [" ", "["], "command": "fold" },
+  // { "keys": [" ", "]"], "command": "unfold" },
+  // ANF
+  {"keys": [" ", "n"], "command": "advanced_new_file_new", "context": [{"key": "setting.command_mode"}]},
+  // ProjectManager
+  {"keys": ["ctrl+alt+o"], "command": "project_manager", "args": {"action": "new"}},
+  // REPL
+  {"keys": ["ctrl+alt+t"], "command": "run_existing_window_command",
+    "args":
+      {
+        "id": "repl_shell",
+        "file": "config/Shell/Main.sublime-menu"
+      }
+  },
+  {"keys": ["ctrl+alt+v"], "command": "python_virtualenv_repl"},
+  {"keys": [" ", "s"], "command": "repl_restart", "context": [{"key": "setting.command_mode"}]}
+]

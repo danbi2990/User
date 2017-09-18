@@ -1,0 +1,104 @@
+{
+	"always_show_minimap_viewport": true,
+	"anaconda_linting": false,
+	"auto_complete": true,
+	"auto_complete_commit_on_tab": true,
+	"auto_complete_triggers":
+	[
+		{
+			"characters": "<",
+			"selector": "text.html"
+		},
+		{
+			"characters": ".",
+			"selector": "source.sql"
+		}
+	],
+	"auto_match_enabled": true,
+	"bold_folder_labels": true,
+	"caret_extra_width": 0.8,
+	"caret_style": "solid",
+	"close_windows_when_empty": false,
+	"color_scheme": "Packages/DevastateMini/DevastateMini.tmTheme",
+	"detect_indentation": true,
+	"draw_indent_guides": true,
+	"ensure_newline_at_eof_on_save": true,
+	"file_exclude_patterns":
+	[
+		"*.DS_Store",
+		"*.pyc"
+	],
+	"find_selected_text": true,
+	"flatland_sidebar_tree_medium": false,
+	"flatland_square_tabs": false,
+	"fold_buttons": true,
+	"folder_exclude_patterns":
+	[
+		"__pycache__",
+		"*.git"
+	],
+	"font_face": "Noto Mono",
+	"font_options":
+	[
+		"no_round"
+	],
+	"font_size": 13,
+	"highlight_line": false,
+	"highlight_modified_tabs": true,
+	"ignored_packages":
+	[
+		"BookmarkManager",
+		"Boxy Theme",
+		"BracketHighlighter",
+		"ConvertToUTF8",
+		"Emmet",
+		"FTPSync",
+		"GitGutter",
+		"Markdown",
+		"SFTP",
+		"ShellScript",
+		"ShellStatus",
+		"StatusMessage",
+		"Theme - Flatland",
+		"UnitTesting",
+		"VintageES"
+	],
+	"indent_to_bracket": true,
+	"inverse_caret_state": true,
+	"line_padding_bottom": 0,
+	"line_padding_top": 0,
+	"match_brackets": true,
+	"match_brackets_angle": true,
+	"match_brackets_braces": true,
+	"match_brackets_content": true,
+	"match_brackets_square": true,
+	"match_tags": false,
+	"new_window_settings":
+	{
+		"hide_open_files": false,
+		"show_tabs": true,
+		"side_bar_visible": true,
+		"status_bar_visible": true
+	},
+	"preview_on_click": false,
+	"remember_open_files": true,
+	"remember_open_folders": true,
+	"save_on_focus_lost": false,
+	"scroll_past_end": false,
+	"show_encoding": true,
+	"show_full_path": true,
+	"show_line_endings": true,
+	"show_minimap": false,
+	"show_tab_close_buttons": false,
+	"tab_size": 2,
+	"theme": "DevastateMini.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
+	"use_simple_full_screen": true,
+	"use_tab_stops": true,
+	"vintage_ctrl_keys": true,
+	"vintage_start_in_command_mode": true,
+	"vintage_use_clipboard": true,
+	"wide_caret": true,
+	"word_wrap": true
+}

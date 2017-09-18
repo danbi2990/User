@@ -1,0 +1,39 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"A File Icon",
+		"AdvancedNewFile",
+		"Alignment",
+		"Anaconda",
+		"Boxy Theme",
+		"BracketHighlighter",
+		"ConvertToUTF8",
+		"DevastateMini",
+		"Emmet",
+		"FTPSync",
+		"Git",
+		"GitGutter",
+		"Markdown Preview",
+		"MarkdownEditing",
+		"Package Control",
+		"PackageResourceViewer",
+		"ProjectManager",
+		"SFTP",
+		"ShellStatus",
+		"SideBarEnhancements",
+		"SQLTools",
+		"StatusMessage",
+		"SublimeLinter",
+		"SublimeLinter-pep8",
+		"SublimeLinter-pyflakes",
+		"SublimeREPL",
+		"Theme - Flatland",
+		"UnitTesting",
+		"Vintage YankStack",
+		"VintageES"
+	]
+}

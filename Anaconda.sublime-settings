@@ -1,0 +1,38 @@
+{
+  "python_interpreter": "/usr/bin/python3.6",
+  "anaconda_linting": false,
+  "pep8_ignore":
+    [
+        "E501"
+    ],
+  /*
+      If anaconda_gutter_marks is true, this determines what theme is used.
+      Theme 'basic' only adds dots and circles to gutter.
+
+      Other available themes are 'alpha', 'bright', 'dark', 'hard', "retina"
+      (for retina displays) and 'simple'. To see icons that will be used for
+      each theme check gutter_icon_themes folder in Anaconda package.
+  */
+  "anaconda_gutter_theme": "basic",
+  /*
+      If 'outline' (default), anaconda will outline error lines.
+      If 'fill', anaconda will fill the lines.
+      If 'solid_underline', anaconda will draw a solid underline below regions.
+      If 'stippled_underline', anaconda will draw a stippled underline below regions.
+      If 'squiggly_underline', anaconda will draw a squiggly underline below regions.
+      If 'none', anaconda will not draw anything on error lines.
+  */
+  "anaconda_linter_mark_style": "none",
+  "anaconda_linter_underlines": false,
+
+  "extra_paths":
+  [
+    "/opt/sublime_text",
+    "/usr/lib/python3.6"
+  ]
+  /*
+      If this is set to true, anaconda will show errors inline.
+  */
+  // "anaconda_linter_phantoms": true,
+
+}
