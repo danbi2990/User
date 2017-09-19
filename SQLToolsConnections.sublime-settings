@@ -1,24 +1,16 @@
 {
   "connections": {
-    "chrx:dvdrental": {
+    // "chrx:dvdrental": {
+    //   "type"      : "pgsql",
+    //   "host"      : "localhost",
+    //   "port"      : 5432,
+    //   "database"  : "dvdrental",
+    //   "username"  : "postgres",
+    //   "encoding"  : "utf-8"
+    // },
+    "ubuntu:kobis": {
       "type"      : "pgsql",
       "host"      : "localhost",
-      "port"      : 5432,
-      "database"  : "dvdrental",
-      "username"  : "postgres",
-      "encoding"  : "utf-8"
-    },
-    "chrx:kobis": {
-      "type"      : "pgsql",
-      "host"      : "localhost",
-      "port"      : 5432,
-      "database"  : "kobis",
-      "username"  : "postgres",
-      "encoding"  : "utf-8"
-    },
-    "danbi:kobis": {
-      "type"      : "pgsql",
-      "host"      : "danbi",
       "port"      : 5432,
       "database"  : "kobis",
       "username"  : "postgres",
