@@ -3,6 +3,7 @@
 	"anaconda_linting": false,
 	"auto_complete": true,
 	"auto_complete_commit_on_tab": true,
+	"auto_complete_cycle": true,
 	"auto_complete_triggers":
 	[
 		{
@@ -11,7 +12,11 @@
 		},
 		{
 			"characters": ".",
-			"selector": "source.sql"
+			"selector":
+			[
+				"source.sql",
+				"source.js"
+			]
 		}
 	],
 	"auto_match_enabled": true,
@@ -19,9 +24,10 @@
 	"caret_extra_width": 0.8,
 	"caret_style": "solid",
 	"close_windows_when_empty": false,
-	"color_scheme": "Packages/DevastateMini/DevastateMini.tmTheme",
+	"color_scheme": "Packages/User/SublimeLinter/Monokai Phoenix (SL).tmTheme",
 	"detect_indentation": true,
 	"draw_indent_guides": true,
+	"draw_white_space": "all",
 	"ensure_newline_at_eof_on_save": true,
 	"file_exclude_patterns":
 	[
@@ -42,7 +48,7 @@
 	[
 		"no_round"
 	],
-	"font_size": 13,
+	"font_size": 12,
 	"highlight_line": false,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
@@ -51,10 +57,9 @@
 		"Boxy Theme",
 		"BracketHighlighter",
 		"ConvertToUTF8",
-		"Emmet",
 		"FTPSync",
-		"GitGutter",
 		"Markdown",
+		"Markdown Preview",
 		"SFTP",
 		"ShellScript",
 		"ShellStatus",

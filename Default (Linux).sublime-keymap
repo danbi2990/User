@@ -17,10 +17,16 @@
     "context": [{"key": "overlay_visible", "operator": "equal", "operand": true}] },
   { "keys": ["ctrl+j"], "command": "move", "args": {"by": "lines", "forward": true},
     "context": [{"key": "overlay_visible", "operator": "equal", "operand": true}] },
+  { "keys": ["ctrl+k"], "command": "move", "args": {"by": "lines", "forward": false},
+    "context": [{"key": "auto_complete_visible", "operator": "equal", "operand": true}] },
+  { "keys": ["ctrl+j"], "command": "move", "args": {"by": "lines", "forward": true},
+    "context": [{"key": "auto_complete_visible", "operator": "equal", "operand": true}] },
   { "keys": ["ctrl+k"], "command": "scroll_lines", "args": {"amount": 1.0 },
-    "context": [{"key": "overlay_visible", "operator": "equal", "operand": false}] },
+    "context": [{"key": "overlay_visible", "operator": "equal", "operand": false},
+                {"key": "auto_complete_visible", "operator": "equal", "operand": false}] },
   { "keys": ["ctrl+j"], "command": "scroll_lines", "args": {"amount": -1.0 },
-    "context": [{"key": "overlay_visible", "operator": "equal", "operand": false}] },
+    "context": [{"key": "overlay_visible", "operator": "equal", "operand": false},
+                {"key": "auto_complete_visible", "operator": "equal", "operand": false}] },
   {"keys": ["ctrl+h"], "command": "move_to", "args": {"to": "bol", "extend": false} },
   {"keys": ["ctrl+l"], "command": "move_to", "args": {"to": "eol", "extend": false} },
   {"keys": ["ctrl+alt+w"], "command": "close_tabs"},
@@ -38,11 +44,12 @@
   {"keys": ["alt+l"], "command": "next_view"},
   {"keys": [" ", "`"], "command": "toggle_and_focus_sidebar"},
   { "keys": ["`"], "command": "focus_side_bar", "context": [{"key": "setting.command_mode"}] },
+  {"keys": ["ctrl+shift+o"], "command": "select_favorite_file"},
 
   // Edit
   { "keys": ["u"], "command": "undo", "context": [{"key": "setting.command_mode"}] },
   { "keys": ["ctrl+r"], "command": "redo", "context": [{"key": "setting.command_mode"}] },
-  // { "keys": ["ctrl+e"], "command": "find_under_expand" },
+  { "keys": ["alt+d"], "command": "find_under_expand" },
   { "keys": [" ", "h"], "command": "show_panel", "args": {"panel": "replace", "reverse": false}, "context": [{"key": "setting.command_mode"}] },
   { "keys": [" ", "j"], "command": "join_lines", "context": [{"key": "setting.command_mode"}] },
   // Edit: Vintage Numbers
@@ -74,11 +81,11 @@
 
   // MISC
   {"keys": ["alt+e"], "command": "toggle_menu"},
-  {"keys": ["ctrl+8"], "command": "copy_file_path"},
-  {"keys": ["ctrl+9"], "command": "copy_file_folder_path"},
-  {"keys": ["ctrl+0"], "command": "copy_project_folder_path"},
-  {"keys": ["ctrl+shift+9"], "command": "open_file_folder"},
-  {"keys": ["ctrl+shift+0"], "command": "open_project_folder"},
+  {"keys": ["super+8"], "command": "copy_file_path"},
+  {"keys": ["super+9"], "command": "copy_file_folder_path"},
+  {"keys": ["super+0"], "command": "copy_project_folder_path"},
+  {"keys": ["super+shift+9"], "command": "open_file_folder"},
+  {"keys": ["super+shift+0"], "command": "open_project_folder"},
   { "keys": ["j", "k"], "command": "exit_insert_mode",
     "context":
     [
@@ -100,17 +107,17 @@
   // {"keys": [" ","l"], "command": "next_bookmark", "context": [{ "key": "setting.command_mode" }]},
   // {"keys": [" ","a"], "command": "select_all_book", "context": [{ "key": "setting.command_mode" }]},
   {
-    "command": "anaconda_goto", "keys": [" ", "g"], "context": [
+    "command": "anaconda_goto", "keys": ["alt+."], "context": [
       {"key": "selector", "operator": "equal", "operand": "source.python"}, {"key": "setting.command_mode"}
     ]
   },
   {
-    "command": "anaconda_find_usages", "keys": [" ", "f"], "context": [
+    "command": "anaconda_find_usages", "keys": ["alt+,"], "context": [
       {"key": "selector", "operator": "equal", "operand": "source.python"}, {"key": "setting.command_mode"}
     ]
   },
   {
-    "command": "anaconda_doc", "keys": ["ctrl+alt+d"], "context": [
+    "command": "anaconda_doc", "keys": ["alt+o"], "context": [
       {"key": "selector", "operator": "equal", "operand": "source.python"}, {"key": "setting.command_mode"}
     ]
   },

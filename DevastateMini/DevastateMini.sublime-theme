@@ -245,7 +245,7 @@
 //
     {
         "class": "minimap_control",
-        "viewport_color": [255,255,255,10]
+        "viewport_color": [255,255,255,50]
     },
 //
 // LABELS

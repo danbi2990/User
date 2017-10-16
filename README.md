@@ -1,1 +1,1 @@
-* Sublime Text 3 User Folder for Configs
+# ST3 Configs
