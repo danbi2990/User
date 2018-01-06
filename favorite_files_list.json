@@ -1,11 +1,66 @@
 {
     "files": [
-        "/home/jake/Documents/note.txt",
-        "/home/jake/.profile",
-        "/home/jake/.bashrc",
-        "/home/jake/Dev/templates/.tern-project-tmp.json",
-        "/home/jake/Dev/templates/tmp.sublime-project.json"
+        {
+            "alias": ".profile",
+            "file": "/home/jake/.profile"
+        },
+        {
+            "alias": ".bashrc",
+            "file": "/home/jake/.bashrc"
+        },
+        {
+            "alias": ".tern-project-tmp.json",
+            "file": "/home/jake/Dev/templates/.tern-project-tmp.json"
+        },
+        {
+            "alias": "tmp.sublime-project.json",
+            "file": "/home/jake/Dev/templates/tmp.sublime-project.json"
+        },
+        {
+            "alias": "hosts",
+            "file": "/etc/hosts"
+        },
+        {
+            "alias": "fstab",
+            "file": "/etc/fstab"
+        },
+        {
+            "alias": ".Xmodmap",
+            "file": "/home/jake/.Xmodmap"
+        },
+        {
+            "alias": ".tmux.conf",
+            "file": "/home/jake/.tmux.conf"
+        },
+        {
+            "alias": ".vimrc",
+            "file": "/home/jake/.vimrc"
+        },
+        {
+            "alias": "rc.lua",
+            "file": "/home/jake/.config/awesome/rc.lua"
+        },
+        {
+            "alias": "keymap sublime linux",
+            "file": "/home/jake/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap"
+        },
+        {
+            "alias": "settings sublime",
+            "file": "/home/jake/.config/sublime-text-3/Packages/User/Preferences.sublime-settings"
+        },
+        {
+            "alias": "theme.lua",
+            "file": "/home/jake/dot-files/my-theme/theme.lua"
+        },
+        {
+            "alias": "DevastateMini.sublime-theme",
+            "file": "/home/jake/.config/sublime-text-3/Packages/User/DevastateMini/DevastateMini.sublime-theme"
+        },
+        {
+            "alias": ".tmux.keybindings",
+            "file": "/home/jake/.tmux.keybindings"
+        }
     ],
     "groups": {},
-    "version": 1
+    "version": 2
 }

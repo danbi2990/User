@@ -1,4 +1,17 @@
 {
+	"afn_proj_root": "../",
+	"afn_template_languages": true,
+	"afn_use_keybinding": true,
+	"afn_use_project_root": true,
+	"afn_valid_scopes":
+	[
+		"string",
+		"css",
+		"sass",
+		"less",
+		"scss",
+		"pug"
+	],
 	"always_show_minimap_viewport": true,
 	"anaconda_linting": false,
 	"auto_complete": true,
@@ -41,50 +54,61 @@
 	"folder_exclude_patterns":
 	[
 		"__pycache__",
-		"*.git"
+		"*.git",
+		".sass-cache"
 	],
-	"font_face": "Noto Mono",
+	"font_face": "Monospace",
 	"font_options":
 	[
 		"no_round"
 	],
-	"font_size": 12,
+	"font_size": 16,
 	"highlight_line": false,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
+		"Alignment",
 		"BookmarkManager",
 		"Boxy Theme",
-		"BracketHighlighter",
 		"ConvertToUTF8",
 		"FTPSync",
-		"Markdown",
+		"Git",
 		"Markdown Preview",
+		"SASS Build",
 		"SFTP",
 		"ShellScript",
 		"ShellStatus",
+		"SQLTools",
 		"StatusMessage",
+		"sublime-text-2-buildview",
+		"SublimeLinter-contrib-eslint",
+		"SublimeOnSaveBuild",
+		"SublimeREPL",
+		"SubNotify",
 		"Theme - Flatland",
 		"UnitTesting",
-		"VintageES"
+		"VintageES",
+		"VintageLines",
+		"Zeal"
 	],
 	"indent_to_bracket": true,
 	"inverse_caret_state": true,
 	"line_padding_bottom": 0,
 	"line_padding_top": 0,
-	"match_brackets": true,
-	"match_brackets_angle": true,
-	"match_brackets_braces": true,
-	"match_brackets_content": true,
-	"match_brackets_square": true,
-	"match_tags": false,
+	"match_brackets": false,
+	"match_brackets_angle": false,
+	"match_brackets_braces": false,
+	"match_brackets_content": false,
+	"match_brackets_square": false,
+	"match_tags": true,
 	"new_window_settings":
 	{
-		"hide_open_files": false,
+		"hide_open_files": true,
 		"show_tabs": true,
 		"side_bar_visible": true,
 		"status_bar_visible": true
 	},
+	"open_files_in_new_window": true,
 	"preview_on_click": false,
 	"remember_open_files": true,
 	"remember_open_folders": true,

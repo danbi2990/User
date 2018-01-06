@@ -1,6 +1,5 @@
 {
-	"extensions":
-	[
-		"js"
-	]
+  "extensions": ["js"],
+  "auto_indent": true,
+  "rulers": [80]
 }
